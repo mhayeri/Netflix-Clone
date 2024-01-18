@@ -1,13 +1,7 @@
-const axios = require("axios");
-const dotenv = require("dotenv");
-const path = require("path");
-
-const envPath = path.resolve(__dirname, "../../.env");
-
-dotenv.config({ path: envPath });
+import axios from "axios";
 
 const instance = axios.create({
-    baseURL: process.env.BASE_URL,
+    baseURL: "https://api.themoviedb.org/3",
 });
 
-module.exports = instance;
+export default instance;
