@@ -8,9 +8,6 @@
 # enviroment
 .env
 
-# package dependencies
-package-lock.json
-
 # testing
 /coverage
 
